@@ -18,9 +18,7 @@ import java.util.Map;
 /**
  * DefaultAuditStrategy
  *
- * @author ZhangYi<loeyae @ gmail.com>
- * @version 1.0
- * @date 2023/4/20
+ * @author ZhangYi
  */
 @Slf4j
 public class DefaultAuditStrategy implements AuditStrategy {

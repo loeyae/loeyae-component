@@ -29,9 +29,7 @@ import java.util.function.Function;
 /**
  * AuditConfiguration
  *
- * @author ZhangYi<loeyae @ gmail.com>
- * @version 1.0
- * @date 2023/4/20
+ * @author ZhangYi
  */
 @Slf4j
 public class AuditConfiguration {
@@ -71,6 +69,9 @@ public class AuditConfiguration {
             final Audited audited = xClass.getAnnotation(Audited.class);
             if (audited != null) {
                 auditData.setBizId(audited.bizId());
+                auditData.setModuleName(audited.moduleName());
+                auditData.setTableName(audited.tableName());
+                auditData.setExtra(auditData.getExtra());
                 readPersistentPropertiesAccess(persistentClass, auditData);
                 addPropertiesFromClass(xClass, auditData);
             }

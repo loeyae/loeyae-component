@@ -13,9 +13,7 @@ import java.util.Map;
 /**
  * DelWorkUnit
  *
- * @author ZhangYi<loeyae @ gmail.com>
- * @version 1.0
- * @date 2023/4/21
+ * @author ZhangYi
  */
 public class DelWorkUnit extends AbstractAuditWorkUnit {
 

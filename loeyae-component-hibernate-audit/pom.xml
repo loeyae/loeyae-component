@@ -7,12 +7,15 @@
     <parent>
         <groupId>com.loeyae.component</groupId>
         <artifactId>loeyae-component</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
     </parent>
 
     <groupId>com.loeyae.component</groupId>
     <artifactId>loeyae-component-hibernate-audit</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.2</version>
+    <name>${project.artifactId}</name>
+    <description>JPA 审核日志组件</description>
+    <url>https://github.com/loeyae/loeyae-component</url>
 
     <dependencies>
         <dependency>

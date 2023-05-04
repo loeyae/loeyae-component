@@ -8,9 +8,7 @@ import org.hibernate.event.spi.PreCollectionRemoveEventListener;
 /**
  * AuditPreCollectionRemoveEventListener
  *
- * @author ZhangYi<loeyae @ gmail.com>
- * @version 1.0
- * @date 2023/4/20
+ * @author ZhangYi
  */
 @Slf4j
 public class AuditPreCollectionRemoveEventListener extends BaseAuditEventListener implements PreCollectionRemoveEventListener {

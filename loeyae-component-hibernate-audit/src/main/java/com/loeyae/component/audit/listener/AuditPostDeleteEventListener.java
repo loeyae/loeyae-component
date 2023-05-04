@@ -12,9 +12,7 @@ import org.hibernate.persister.entity.EntityPersister;
 /**
  * AuditPostDeleteEventListener
  *
- * @author ZhangYi<loeyae @ gmail.com>
- * @version 1.0
- * @date 2023/4/20
+ * @author ZhangYi
  */
 @Slf4j
 public class AuditPostDeleteEventListener extends BaseAuditEventListener implements PostDeleteEventListener {

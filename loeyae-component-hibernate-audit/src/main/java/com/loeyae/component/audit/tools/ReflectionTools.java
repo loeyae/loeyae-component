@@ -19,9 +19,7 @@ import java.util.Map;
 /**
  * ReflectionTools
  *
- * @author ZhangYi<loeyae @ gmail.com>
- * @version 1.0
- * @date 2023/4/18
+ * @author ZhangYi
  */
 public abstract class ReflectionTools {
     private static final Map<Pair<Class, String>, Getter> GETTER_CACHE = new ConcurrentReferenceHashMap<>(
@@ -95,6 +93,7 @@ public abstract class ReflectionTools {
     /**
      * Locate class with a given name.
      *
+     * @param <T>                typename
      * @param name               Fully qualified class name.
      * @param classLoaderService Class loading service. Passing {@code null} is "allowed", but will result in
      *                           TCCL usage.

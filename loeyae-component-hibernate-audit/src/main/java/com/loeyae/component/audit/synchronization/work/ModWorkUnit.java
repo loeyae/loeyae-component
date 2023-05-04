@@ -11,9 +11,7 @@ import java.util.Map;
 /**
  * ModWorkUnit
  *
- * @author ZhangYi<loeyae @ gmail.com>
- * @version 1.0
- * @date 2023/4/20
+ * @author ZhangYi
  */
 public class ModWorkUnit extends AbstractAuditWorkUnit{
     private final Map<String, Object> originalData;

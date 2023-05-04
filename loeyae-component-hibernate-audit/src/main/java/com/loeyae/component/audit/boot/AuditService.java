@@ -15,9 +15,7 @@ import java.util.Map;
 /**
  * AuditService
  *
- * @author ZhangYi<loeyae @ gmail.com>
- * @version 1.0
- * @date 2023/4/20
+ * @author ZhangYi
  */
 public interface AuditService extends Service {
 

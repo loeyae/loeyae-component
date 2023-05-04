@@ -11,9 +11,7 @@ import java.util.Map;
 /**
  * AbstractAuditWorkUnit
  *
- * @author ZhangYi<loeyae @ gmail.com>
- * @version 1.0
- * @date 2023/4/20
+ * @author ZhangYi
  */
 public abstract class AbstractAuditWorkUnit implements AuditWorkUnit {
     protected final SessionImplementor sessionImplementor;

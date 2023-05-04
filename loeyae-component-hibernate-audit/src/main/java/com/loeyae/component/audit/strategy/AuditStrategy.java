@@ -11,9 +11,7 @@ import java.io.Serializable;
 /**
  * AuditStrategy
  *
- * @author ZhangYi<loeyae @ gmail.com>
- * @version 1.0
- * @date 2023/4/20
+ * @author ZhangYi
  */
 @Incubating
 public interface AuditStrategy {
@@ -21,14 +19,16 @@ public interface AuditStrategy {
     void postInitialize(ServiceRegistry serviceRegistry);
 
     /**
+     * perform
      *
-     * @param session
-     * @param entityName
-     * @param auditService
-     * @param id
-     * @param originalData
-     * @param changes
-     * @param changedData
+     * @param session session
+     * @param entityName entity name
+     * @param auditService audit service
+     * @param model model
+     * @param id id
+     * @param originalData original data
+     * @param changes changes data
+     * @param changedData changed data
      */
     void perform(
             Session session,
@@ -42,14 +42,18 @@ public interface AuditStrategy {
 
 
     /**
+     * performCollectionChange
      *
-     * @param session
-     * @param entityName
-     * @param propertyName
-     * @param auditService
-     * @param originalData
-     * @param originalData
+     * @param session  session
+     * @param entityName entity name
+     * @param propertyName property name
+     * @param auditService audit service
+     * @param model model object
+     * @param originalData original data
+     * @param changes changes data
+     * @param changedData changed data
      */
+    @SuppressWarnings("unuse")
     void performCollectionChange(
             Session session,
             String entityName,

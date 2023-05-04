@@ -10,9 +10,7 @@ import java.util.List;
 /**
  * EntityXmlMappingData
  *
- * @author ZhangYi<loeyae @ gmail.com>
- * @version 1.0
- * @date 2023/4/20
+ * @author ZhangYi
  */
 public class EntityXmlMappingData {
     private Document mainXmlMapping;

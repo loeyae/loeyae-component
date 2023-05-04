@@ -5,9 +5,7 @@ import java.util.Map;
 /**
  * PersistentCollectionData
  *
- * @author ZhangYi<loeyae @ gmail.com>
- * @version 1.0
- * @date 2023/4/20
+ * @author ZhangYi
  */
 public class PersistentCollectionData {
     private final String entityName;

@@ -8,12 +8,12 @@ import org.hibernate.event.spi.PreCollectionUpdateEventListener;
 /**
  * AuditPreCollectionUpdateEventListener
  *
- * @author ZhangYi<loeyae @ gmail.com>
- * @version 1.0
- * @date 2023/4/20
+ * @author ZhangYi
  */
 @Slf4j
 public class AuditPreCollectionUpdateEventListener extends BaseAuditEventListener implements PreCollectionUpdateEventListener {
+    private static final long serialVersionUID = 4144365916049655768L;
+
     public AuditPreCollectionUpdateEventListener(AuditService auditService) {
         super(auditService);
     }

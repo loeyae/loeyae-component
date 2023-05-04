@@ -5,13 +5,12 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 import java.lang.reflect.Field;
+import java.util.Map;
 
 /**
  * Audited
  *
- * @author ZhangYi<loeyae @ gmail.com>
- * @version 1.0
- * @date 2023/4/20
+ * @author ZhangYi
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.TYPE})
@@ -31,4 +30,17 @@ public @interface Audited {
      */
     String moduleName();
 
+    /**
+     * 表名
+     *
+     * @return 表名
+     */
+    String tableName();
+
+    /**
+     * 扩展信息
+     *
+     * @return 扩展信息
+     */
+    String[] extra();
 }

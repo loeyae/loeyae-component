@@ -15,11 +15,9 @@ import java.util.Set;
 /**
  * 事件监听基类
  *
- * @author ZhangYi<loeyae @ gmail.com>
- * @version 1.0
- * @date 2023/4/20
+ * @author ZhangYi
  */
-public abstract class BaseAuditEventListener {
+public abstract class BaseAuditEventListener implements AuditEventListener {
 
     protected final AuditService auditService;
 

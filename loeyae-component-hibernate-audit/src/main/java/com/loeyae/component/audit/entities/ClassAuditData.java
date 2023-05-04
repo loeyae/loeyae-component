@@ -11,9 +11,7 @@ import java.util.*;
 /**
  * ClassAuditData
  *
- * @author ZhangYi<loeyae @ gmail.com>
- * @version 1.0
- * @date 2023/4/20
+ * @author ZhangYi
  */
 @Data
 public class ClassAuditData {
@@ -21,6 +19,10 @@ public class ClassAuditData {
     private String bizId;
 
     private String moduleName;
+
+    private String tableName;
+
+    private String[] extra;
 
     private final Map<String, Property> propertyMap = new HashMap<>();
     private final Map<String, String> propertyComments = new HashMap<>();
