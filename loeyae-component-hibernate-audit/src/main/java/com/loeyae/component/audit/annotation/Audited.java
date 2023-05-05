@@ -42,5 +42,5 @@ public @interface Audited {
      *
      * @return 扩展信息
      */
-    String[] extra();
+    String[] extra() default {};
 }
