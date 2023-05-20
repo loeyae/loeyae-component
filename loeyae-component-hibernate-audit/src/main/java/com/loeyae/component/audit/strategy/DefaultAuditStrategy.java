@@ -45,9 +45,7 @@ public class DefaultAuditStrategy implements AuditStrategy {
         Map<String, Pair<String, Object>> buildData = new HashMap<>();
         if (data instanceof Map) {
             ClassAuditData classAuditData = auditService.getConfiguration().get(entityName);
-            ((Map<String, ?>) data).forEach((key, value) -> {
-                buildData.put(key, Pair.make(classAuditData.getPropertyComments().getOrDefault( key, key ), value));
-            });
+            ((Map<String, ?>) data).forEach((key, value) -> buildData.put(key, Pair.make(classAuditData.getPropertyComments().getOrDefault( key, key ), value)));
         }
         return buildData;
     }
@@ -56,9 +54,7 @@ public class DefaultAuditStrategy implements AuditStrategy {
         Map<String, Object> buildData = new HashMap<>();
         if (data instanceof Map) {
             ClassAuditData classAuditData = auditService.getConfiguration().get(entityName);
-            ((Map<String, ?>) data).forEach((key, value) -> {
-                buildData.put(classAuditData.getPropertyComments().getOrDefault( key, key ), value);
-            });
+            ((Map<String, ?>) data).forEach((key, value) -> buildData.put(classAuditData.getPropertyComments().getOrDefault( key, key ), value));
         }
         return buildData;
     }
@@ -68,7 +64,7 @@ public class DefaultAuditStrategy implements AuditStrategy {
         if ("id".equals(bizId)) {
             return id;
         }
-        if (changedData == null) {
+        if (null != changedData) {
             return getBizIdFromData(changedData, bizId, id);
         }
         return getBizIdFromData(originalData, bizId, id);
